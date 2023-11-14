@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 
@@ -9,6 +10,7 @@ namespace Asp.Net_Core_6.CustomMiddleware
     public class CustomMiddleware1
     {
         private readonly RequestDelegate _next;
+        public static int count = 0;
 
         public CustomMiddleware1(RequestDelegate next)
         {
@@ -17,8 +19,12 @@ namespace Asp.Net_Core_6.CustomMiddleware
 
         public async Task Invoke(HttpContext httpContext)
         {
-            await httpContext.Response.WriteAsync("CustomMiddleware1\n");
+            count++;
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
             await _next(httpContext);
+            stopwatch.Stop();
+            await httpContext.Response.WriteAsync(String.Format("Request No: {0} and it takes {1} time",count.ToString(),stopwatch.ElapsedMilliseconds));
         }
     }
 
