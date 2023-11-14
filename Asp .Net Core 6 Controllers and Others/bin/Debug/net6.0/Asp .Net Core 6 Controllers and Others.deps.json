@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Asp .Net Core 6 Controllers and Others/1.0.0": {
+        "runtime": {
+          "Asp .Net Core 6 Controllers and Others.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Asp .Net Core 6 Controllers and Others/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
