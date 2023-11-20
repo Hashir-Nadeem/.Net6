@@ -4,7 +4,6 @@ namespace Asp_.Net_Core_6_Controllers_and_Others.Controllers
 {
     //attribute based controller
     [Controller]
-    
     public class Contact:Controller
     {
         public string Index()

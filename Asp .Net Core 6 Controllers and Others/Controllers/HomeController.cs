@@ -59,5 +59,16 @@ namespace Asp_.Net_Core_6_Controllers_and_Others.Controllers
             var byteArray = System.IO.File.ReadAllBytes(@"C:\Users\The Laptop Store\OneDrive\Desktop\ASP.NET Core Middleware _ Microsoft Learn.pdf");
             return new FileContentResult(byteArray,"application/pdf");
         }
+
+        [Route("getName/{name:alpha:isHashir}")]
+        public IActionResult getName()
+        {
+            var name = _httpContext.HttpContext.Request.RouteValues["name"];
+            if (name == null)
+            {
+                return NotFound("Name Not Found");
+            }
+            return Ok("Name is: "+name);
+        }
     }
 }
