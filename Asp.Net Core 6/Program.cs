@@ -21,7 +21,7 @@ var app = builder.Build();
  and app.userouting() will map that request directly to some endpoint */
 
 //app.UseMiddleware<CustomMiddleware2>();
-app.UseCustomMiddleware1();
+app.UseCustomMiddlewar1();
 
 //adding custom response headers
 app.Use(async (HttpContext context, RequestDelegate next) =>

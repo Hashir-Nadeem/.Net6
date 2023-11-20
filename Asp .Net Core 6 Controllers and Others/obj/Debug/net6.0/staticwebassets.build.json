@@ -1,11 +1,37 @@
 {
   "Version": 1,
-  "Hash": "1ajmM1LWpDADDM68eBUi2ajqXJYxw34MoCj3U3kJs8E=",
+  "Hash": "a+t3/KrZIEhnl4F+EJEd3siPWr1kMlJCEbFKseZpfcs=",
   "Source": "Asp .Net Core 6 Controllers and Others",
   "BasePath": "_content/Asp .Net Core 6 Controllers and Others",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Asp .Net Core 6 Controllers and Others\\wwwroot",
+      "Source": "Asp .Net Core 6 Controllers and Others",
+      "ContentRoot": "D:\\Projects\\.Net6\\Asp .Net Core 6 Controllers and Others\\wwwroot\\",
+      "BasePath": "_content/Asp .Net Core 6 Controllers and Others",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Projects\\.Net6\\Asp .Net Core 6 Controllers and Others\\wwwroot\\sample.pdf",
+      "SourceId": "Asp .Net Core 6 Controllers and Others",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\.Net6\\Asp .Net Core 6 Controllers and Others\\wwwroot\\",
+      "BasePath": "_content/Asp .Net Core 6 Controllers and Others",
+      "RelativePath": "sample.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sample.pdf"
+    }
+  ]
 }

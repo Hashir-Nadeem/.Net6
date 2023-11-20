@@ -7,4 +7,8 @@
     <RootNamespace>Asp_.Net_Core_6_Controllers_and_Others</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
 </Project>
