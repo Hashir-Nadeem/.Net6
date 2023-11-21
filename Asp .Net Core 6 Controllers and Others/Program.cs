@@ -61,7 +61,6 @@ app.UseEndpoints(endpoints =>
     );
 
 });
-
 //it will enable routing automtically and consider each action method as route
 app.MapControllers();
 
