@@ -4,10 +4,11 @@ using RouteAttribute = Microsoft.AspNetCore.Mvc.RouteAttribute;
 
 namespace Asp_.Net_Core_6_Controllers_and_Others.Controllers
 {
-   
+
 
     //suffix based controller
-    [Route("home")]
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/home")]
     [Route("")]
 
     public class HomeController:Controller

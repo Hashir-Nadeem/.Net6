@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gpSgA6yLkDwrINSKwdv2ZjnVOjGfak3tbPkyG0VOk4II/wN8F9NsqrmvUMwV8fMcsS9ZooJv9G1KptSgaXymFQ==",
+  "dgSpecHash": "s+J625ggVhHhsmH9+uY5Gq6C//eL8VE/UCHSUry/YBcKYmAykEhHAnwWCc8iZZRKIWLv5hFklCmNebSdlIqJ5Q==",
   "success": true,
   "projectFilePath": "D:\\Projects\\.Net6\\Asp .Net Core 6 Controllers and Others\\Asp .Net Core 6 Controllers and Others.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\The Laptop Store\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.1.0\\microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

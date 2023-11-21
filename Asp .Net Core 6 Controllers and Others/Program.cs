@@ -1,5 +1,6 @@
 using Asp_.Net_Core_6_Controllers_and_Others.CustomConstraints;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.FileProviders;
 
 //wwwroot folder must be exist before having another global static file folder
@@ -14,6 +15,13 @@ var builder = WebApplication.CreateBuilder
 //this will register all the controllers suffix with controller or using controller attribute
 builder.Services.AddControllers();
 builder.Services.AddTransient<IHttpContextAccessor,HttpContextAccessor>();
+
+builder.Services.AddApiVersioning(options =>
+{
+    options.DefaultApiVersion = new ApiVersion(1, 0);
+    options.AssumeDefaultVersionWhenUnspecified = true;
+    options.ReportApiVersions = true;
+});
 
 //register custom constraint
 builder.Services.AddRouting(options =>
@@ -43,6 +51,15 @@ app.UseEndpoints(endpoints =>
         name:"default",
         pattern:"{controller=Home}/{action=Index}/{filename?}"
     );
+
+    endpoints.MapControllerRoute
+    (
+        name: "catch-all",
+        pattern: "Home/**",
+        defaults: new { controller = "Home", action = "Index" }
+
+    );
+
 });
 
 //it will enable routing automtically and consider each action method as route
